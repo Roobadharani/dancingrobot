@@ -1,0 +1,233 @@
+*{
+    background-color: pink;
+}
+.head{
+    height:150px;
+    width:200px;
+    border-radius: 50% 50% 0 0;
+    background-color: rgb(253, 61, 141);
+    margin-left: 700px;
+}
+.body{
+    height:200px;
+    width: 200px;
+    background-color: rgb(253, 61, 141);;
+    border-radius: 0 0 25% 25%;
+    margin-top: 5px;
+    margin-left: 700px;
+    position: relative;
+}
+
+.lefthand{
+    height:150px;
+    width:45px;
+    background-color: rgb(253, 61, 141);;
+    border-radius: 200px 200px 200px 200px;
+    margin-left: 645px;
+    margin-top: -180px;
+}
+.righthand{
+    height:150px;
+    width:45px;
+    background-color:rgb(253, 61, 141);;
+    border-radius: 200px 200px 200px 200px;
+    margin-left: 910px;
+    margin-top: -150px;
+}
+.leftleg{
+    height:150px;
+    width:45px;
+    background-color: rgb(253, 61, 141);;
+    border-radius: 0 0 200px 200px;
+    margin-left: 810px;
+    margin-top:-30px;
+    position: absolute;
+}
+.rightleg{
+    height:150px;
+    width:45px;
+    background-color: rgb(253, 61, 141);;
+    border-radius: 0 0 200px 200px;
+    margin-left: 750px;
+    margin-top: -30px;
+    position: absolute;
+
+}
+.eye1{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 80px;
+    position: absolute;
+
+}
+.eye2{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 135px;
+    position: absolute;
+    margin-top: 80px;
+}
+h1{
+    text-align: center;
+}
+
+.robots:hover .head {
+    animation: movehead 2s infinite;
+  }
+  
+  .robots:hover .body {
+    border-radius: 40%;
+    animation: movetorso 2s infinite;
+  }
+  
+  .robots:hover .lefthand {
+    animation: moveleftarm 2s infinite;
+  }
+  
+  .robots:hover .righthand {
+    animation: moverightarm 2s infinite;
+  }
+  
+  .robots:hover .leftleg {
+    animation: moverightleg 2s infinite;
+  }
+  
+  .robots:hover .rightleg {
+    animation: moveleftleg 2s infinite;
+  }
+  
+  @keyframes movehead {
+    0% {
+      width: 200px;
+    }
+  
+    25% {
+      width: 300px;
+    }
+  
+    50% {
+      width: 200px;
+    }
+  
+    75% {
+      width: 300px;
+    }
+  
+    100% {
+      width: 200px;
+    }
+  }
+  
+  @keyframes moveleftarm {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    25% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    75% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+  
+  @keyframes moverightarm {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    25% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    75% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+  
+  @keyframes moveleftleg {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(20deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(20deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes moverightleg {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-20deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(-20deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes movetorso {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
